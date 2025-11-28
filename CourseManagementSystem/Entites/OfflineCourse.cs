@@ -2,9 +2,9 @@ namespace CourseManagementSystem.Entities
 {
     public class OfflineCourse : Course
     {
-        public string Classroom { get; private set; }
-        public string Building { get; private set; }
-        public string Schedule { get; private set; }
+        public string Classroom { get; set; }
+        public string Building { get; set; }
+        public string Schedule { get; set; }
 
         public OfflineCourse(string title, AssessmentType assessmentType, int credits,
                            string faculty, string classroom, string building, string schedule)

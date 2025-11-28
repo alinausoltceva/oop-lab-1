@@ -2,9 +2,9 @@ namespace CourseManagementSystem.Entities
 {
     public class OnlineCourse : Course
     {
-        public string Platform { get; private set; }
-        public string MeetingLink { get; private set; }
-        public bool HasRecordings { get; private set; }
+        public string Platform { get; set; }
+        public string MeetingLink { get; set; }
+        public bool HasRecordings { get; set; }
 
         public OnlineCourse(string title, AssessmentType assessmentType, int credits,
                           string faculty, string platform, string meetingLink, bool hasRecordings)
