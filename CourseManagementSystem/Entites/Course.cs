@@ -4,13 +4,13 @@ namespace CourseManagementSystem.Entities
 {
     public abstract class Course
     {
-        public string Title { get; set; }
-        public CourseFormat Format { get; set; }
-        public AssessmentType AssessmentType { get; set; }
-        public int Credits { get; set; }
-        public string Faculty { get; set; }
-        public Teacher Teacher { get; set; }
-        public List<Student> Students { get; protected set; }
+        public string Title { get; private set; }
+        public CourseFormat Format { get; private set; }
+        public AssessmentType AssessmentType { get; private set; }
+        public int Credits { get; private set; }
+        public string Faculty { get; private set; }
+        public Teacher Teacher { get; private set; }
+        public List<Student> Students { get; private set; }
 
         protected Course(string title, CourseFormat format, AssessmentType assessmentType,
                         int credits, string faculty)
